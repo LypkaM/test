@@ -1,0 +1,226 @@
+body {
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+p {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	line-height: 1.65em;
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.header {
+	background: rgba(77,189,254,1);
+    background: -moz-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(77,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+    background: -webkit-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -o-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -ms-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: linear-gradient(to right, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbdfe', endColorstr='#3790d9', GradientType=1 );
+	padding: 60px 0 140px 0;
+    color: #fff;
+}
+.desktop {
+	margin-top: 60px;
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+.offer {
+	height: 230px;
+	width: 550px;
+}
+.title {
+	font-size: 31px;
+	
+}
+.title span {
+	font-size: 51px; 
+}
+.intro {
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 35px;
+	margin-bottom: 43px;
+	width: 390px;
+}
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	background: #FFD429;
+	color: #000;
+	display: block;
+	width: 222px;
+	height: 56px;
+	padding: 15px 28px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+.btn:hover {
+	background: #d9860e;
+}
+.learn {
+	padding: 100px 0;
+}
+.section-title {
+	font-size: 30px;
+	display: flex;
+	justify-content: center
+}
+.skills {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+.skill-title {
+	font-size: 19px;
+	margin-top: 22px;
+	padding-top: 63px;
+	text-align: center;
+}
+.skill-text {
+	margin-top: 15px;
+	text-align: center;
+}
+.skill {
+	width: 300px;
+	background: url('../img/icon1.jpg') no-repeat center top;
+	
+}
+.skill-free {
+	width: 258px;
+	background: url('../img/icon2.jpg') no-repeat center top;
+}
+.skill-change {
+	width: 293px;
+	background: url('../img/icon3.jpg') no-repeat center top;
+}
+.mail {
+	background: #ECF3F8;
+	padding: 100px 0;
+}
+.form {
+	margin-top: 70px;
+}
+.input {
+	font-family: 'Ubuntu', sans-serif;
+	width: 340px;
+	height: 56px;
+	display: block;
+	padding-left: 20px;
+	margin: 16px auto;
+	border: 1px solid #C9C9C9;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+.btn-form {
+	border: 0;
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	margin: 15px 412px;
+	width: 340px;
+	border-radius: 3px;
+}
+.footer {
+	padding: 60px 0;
+	background: #164D7A;
+}
+.credits {
+	color: #FFF;
+	font-size: 14px;
+	text-align: center;
+}
+/*Responsive*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+		.container {
+			width: 960px;
+		}
+		.btn-form {
+			margin-left: 310px;
+		}
+
+}
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: auto;
+	}
+	.desktop {
+		display: block;
+	    width: 549px;
+	    margin: 72px auto 0;
+	}
+	.skills {
+		flex-direction: column;
+	}
+	.skill {
+		width: auto;
+		margin-bottom: 30px;
+	}
+	.desktop {
+		width: 100%;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn {
+		margin-left: 0;
+	    margin-top: 15px;
+	    width: 100%;
+	}
+
+	
+}
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.desktop {
+		width: 100%;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn {
+		margin-left: 0;
+	    margin-top: 15px;
+	    width: 100%;
+	}
+	
+}
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.desktop {
+		margin-top: 200px;
+	}
+}
